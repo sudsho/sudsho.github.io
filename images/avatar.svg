@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <!-- Gradient for background -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a1a3e"/>
+      <stop offset="100%" stop-color="#0f0a1a"/>
+    </radialGradient>
+    <!-- Skin gradient -->
+    <radialGradient id="skinGrad" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#c68642"/>
+      <stop offset="80%" stop-color="#b5651d"/>
+      <stop offset="100%" stop-color="#a0522d"/>
+    </radialGradient>
+    <!-- Hair gradient -->
+    <radialGradient id="hairGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </radialGradient>
+    <!-- Glasses frame gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4d4d4" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#e8e8e8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#c0c0c0" stop-opacity="0.9"/>
+    </linearGradient>
+    <!-- Lens gradient -->
+    <radialGradient id="lensGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="70%" stop-color="#aaccee" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#88aacc" stop-opacity="0.12"/>
+    </radialGradient>
+    <!-- Blazer gradient -->
+    <linearGradient id="blazerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <!-- Shirt gradient -->
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+    <!-- Subtle glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Neck -->
+  <path d="M170 310 L170 360 Q170 380 185 385 L215 385 Q230 380 230 360 L230 310" fill="url(#skinGrad)"/>
+
+  <!-- Blazer / Shoulders -->
+  <path d="M100 500 L100 410 Q100 370 140 365 L185 385 L200 395 L215 385 L260 365 Q300 370 300 410 L300 500 Z" fill="url(#blazerGrad)" stroke="#222" stroke-width="0.5"/>
+
+  <!-- Blazer lapels -->
+  <path d="M140 365 L175 420 L200 395 Z" fill="#222" opacity="0.6"/>
+  <path d="M260 365 L225 420 L200 395 Z" fill="#222" opacity="0.6"/>
+
+  <!-- Shirt collar / V-neck -->
+  <path d="M175 385 L200 430 L225 385 Q215 380 200 395 Q185 380 175 385 Z" fill="url(#shirtGrad)"/>
+
+  <!-- Head shape -->
+  <ellipse cx="200" cy="230" rx="85" ry="100" fill="url(#skinGrad)"/>
+
+  <!-- Ears -->
+  <ellipse cx="115" cy="240" rx="14" ry="20" fill="#b5651d"/>
+  <ellipse cx="115" cy="240" rx="8" ry="13" fill="#a0522d"/>
+  <ellipse cx="285" cy="240" rx="14" ry="20" fill="#b5651d"/>
+  <ellipse cx="285" cy="240" rx="8" ry="13" fill="#a0522d"/>
+
+  <!-- Hair - curly voluminous style -->
+  <!-- Back hair mass -->
+  <ellipse cx="200" cy="170" rx="105" ry="80" fill="url(#hairGrad)"/>
+
+  <!-- Top curly hair -->
+  <path d="M105 190 Q95 140 120 110 Q140 85 165 80 Q185 75 200 78 Q215 75 235 80 Q260 85 280 110 Q305 140 295 190" fill="url(#hairGrad)"/>
+
+  <!-- Curly hair detail strands on left -->
+  <path d="M100 200 Q85 170 95 140 Q100 125 115 115" fill="none" stroke="#0d0d0d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M105 210 Q88 185 92 155 Q95 135 108 120" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Curly hair detail strands on right -->
+  <path d="M300 200 Q315 170 305 140 Q300 125 285 115" fill="none" stroke="#0d0d0d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M295 210 Q312 185 308 155 Q305 135 292 120" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Hair flowing to shoulders - left side -->
+  <path d="M100 200 Q90 240 95 280 Q98 310 105 330 Q108 340 115 345" fill="url(#hairGrad)"/>
+  <path d="M108 200 Q100 235 102 270 Q105 300 110 325" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Hair flowing to shoulders - right side -->
+  <path d="M300 200 Q310 240 305 280 Q302 310 295 330 Q292 340 285 345" fill="url(#hairGrad)"/>
+  <path d="M292 200 Q300 235 298 270 Q295 300 290 325" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Top curl details -->
+  <path d="M140 105 Q145 85 160 82 Q170 80 175 85" fill="none" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 90 Q190 78 205 78 Q215 80 220 88" fill="none" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+  <path d="M225 92 Q235 82 250 85 Q260 90 265 105" fill="none" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Forehead hairline -->
+  <path d="M130 170 Q140 150 160 140 Q180 135 200 137 Q220 135 240 140 Q260 150 270 170" fill="url(#hairGrad)"/>
+
+  <!-- Eyebrows -->
+  <path d="M150 215 Q165 207 182 212" stroke="#1a1a1a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M218 212 Q235 207 250 215" stroke="#1a1a1a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="168" cy="232" rx="14" ry="10" fill="white"/>
+  <ellipse cx="232" cy="232" rx="14" ry="10" fill="white"/>
+  <circle cx="170" cy="232" r="6" fill="#2c1810"/>
+  <circle cx="234" cy="232" r="6" fill="#2c1810"/>
+  <circle cx="170" cy="232" r="3" fill="#0d0d0d"/>
+  <circle cx="234" cy="232" r="3" fill="#0d0d0d"/>
+  <!-- Eye highlights -->
+  <circle cx="172" cy="230" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="236" cy="230" r="1.5" fill="white" opacity="0.8"/>
+
+  <!-- Glasses - clear/transparent aviator style frames -->
+  <!-- Left lens -->
+  <path d="M140 220 Q138 208 148 200 Q158 194 172 194 Q186 194 194 200 Q200 208 198 220 Q200 235 194 242 Q186 250 172 250 Q158 250 148 242 Q138 235 140 220 Z"
+        fill="url(#lensGrad)" stroke="url(#glassGrad)" stroke-width="2.5"/>
+  <!-- Right lens -->
+  <path d="M202 220 Q200 208 206 200 Q214 194 228 194 Q242 194 252 200 Q262 208 260 220 Q262 235 252 242 Q242 250 228 250 Q214 250 206 242 Q200 235 202 220 Z"
+        fill="url(#lensGrad)" stroke="url(#glassGrad)" stroke-width="2.5"/>
+  <!-- Bridge -->
+  <path d="M198 218 Q200 212 202 218" fill="none" stroke="url(#glassGrad)" stroke-width="2"/>
+  <!-- Temple arms -->
+  <line x1="140" y1="215" x2="118" y2="212" stroke="url(#glassGrad)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="260" y1="215" x2="282" y2="212" stroke="url(#glassGrad)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Nose pads -->
+  <circle cx="193" cy="222" r="2" fill="#d4d4d4" opacity="0.5"/>
+  <circle cx="207" cy="222" r="2" fill="#d4d4d4" opacity="0.5"/>
+
+  <!-- Nose -->
+  <path d="M197 235 Q195 255 190 268 Q195 272 200 273 Q205 272 210 268 Q205 255 203 235" fill="none" stroke="#8B6914" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Beard area -->
+  <path d="M145 270 Q145 290 155 305 Q165 318 180 325 Q190 330 200 332 Q210 330 220 325 Q235 318 245 305 Q255 290 255 270"
+        fill="#1a1a1a" opacity="0.85"/>
+
+  <!-- Beard texture -->
+  <path d="M150 275 Q155 295 165 310 Q175 320 185 326" fill="none" stroke="#0d0d0d" stroke-width="1" opacity="0.5"/>
+  <path d="M160 272 Q163 290 170 305 Q178 315 190 325" fill="none" stroke="#0d0d0d" stroke-width="1" opacity="0.5"/>
+  <path d="M250 275 Q245 295 235 310 Q225 320 215 326" fill="none" stroke="#0d0d0d" stroke-width="1" opacity="0.5"/>
+  <path d="M240 272 Q237 290 230 305 Q222 315 210 325" fill="none" stroke="#0d0d0d" stroke-width="1" opacity="0.5"/>
+
+  <!-- Mustache -->
+  <path d="M175 275 Q185 268 200 270 Q215 268 225 275 Q215 280 200 278 Q185 280 175 275 Z" fill="#111" opacity="0.9"/>
+
+  <!-- Mouth/lips hint -->
+  <path d="M185 285 Q193 290 200 289 Q207 290 215 285" fill="none" stroke="#8B4513" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Subtle chin definition through beard -->
+  <path d="M185 320 Q193 330 200 332 Q207 330 215 320" fill="none" stroke="#111" stroke-width="1" opacity="0.4"/>
+
+  <!-- Accent glow effect at bottom -->
+  <ellipse cx="200" cy="490" rx="120" ry="15" fill="#5eead4" opacity="0.08" filter="url(#glow)"/>
+</svg>

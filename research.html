@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudhanshu Srivastava - Research</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/avatar.svg">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="container">
+      <span class="site-name">Sudhanshu Srivastava</span>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="about.html">About Me</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Dissertation Research</h2>
+      <p style="margin-bottom: 16px; font-style: italic; color: #555;">
+        "Hierarchical Multi-Agent Reinforcement Learning for Quality-Aware Intelligent Distributed Manufacturing"
+        <br>Advisor: Dr. Faisal Aqlan &bull; University of Louisville &bull; In collaboration with IBM
+      </p>
+
+      <div class="content-grid">
+        <div>
+          <div class="card" style="margin-bottom: 24px;">
+            <h3>Level 1: Product-Level &mdash; Causal Defect Analytics</h3>
+            <p style="margin-bottom: 10px;">
+              <strong>CF-MARL-SMV2D:</strong> A novel Counterfactual Multi-Agent Reinforcement Learning framework for causal defect analysis in manufacturing. Multiple collaborative agents explore the causal Directed Acyclic Graph (DAG) space through adaptive soft-mask optimization and consensus mechanisms. The framework integrates a learnable domain-informed mask to encode expert knowledge and a counterfactual-based reward for robust causal identification.
+            </p>
+            <p style="margin-bottom: 10px;">
+              <strong>Key Results:</strong> Structural Hamming Distance reduced by 62.5% over best baseline. Downstream defect classification accuracy of 0.96. Low false discovery rate across all benchmarks.
+            </p>
+            <p>
+              <strong>Defect Disposition Prediction:</strong> A two-stage framework integrating label reconstruction under incomplete annotations (20% missing labels) with cost-sensitive weighted Bayesian optimization. Achieved 21% improvement in scrap detection F1-score and 25.3% reduction in expected misclassification costs.
+            </p>
+          </div>
+
+          <div class="card" style="margin-bottom: 24px;">
+            <h3>Level 2: Factory-Level &mdash; Adaptive Production Scheduling</h3>
+            <p style="margin-bottom: 10px;">
+              <strong>LHAC Framework:</strong> A Lexicographic Hierarchical Actor-Critic deep RL architecture for server-to-cell scheduling in configure-to-order manufacturing. Agent 1 maximizes throughput while Agent 2 minimizes tardiness within Agent 1's near-optimal action set, enforcing strict objective prioritization without manual reward-weight tuning.
+            </p>
+            <p style="margin-bottom: 10px;">
+              <strong>Novel Components:</strong> Deferred Action Placement for retry-based temporal flexibility, Critic-Augmented State Encoding for server-cell compatibility learning, and Feasibility-Preserving Reward shaping.
+            </p>
+            <p>
+              <strong>Key Results:</strong> 98.5% completion rates. Outperforms optimization baselines by up to 53 percentage points under severe disruptions. Operates 60-75x faster than optimization-based methods. Robust under stochastic arrivals, processing noise, and equipment disruptions.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Level 3: System-Level &mdash; Distributed Manufacturing Coordination</h3>
+            <p style="margin-bottom: 10px;">
+              <strong>HMARL Framework:</strong> A Hierarchical Multi-Agent RL framework for production management across distributed manufacturing sites. Higher-level agents coordinate global production targets and resource allocation while lower-level agents make local, real-time decisions for production rates and inventory replenishment.
+            </p>
+            <p style="margin-bottom: 10px;">
+              <strong>Architecture:</strong> Centralized-training decentralized-execution (CTDE) paradigm with cooperative and competitive learning mechanisms for autonomous order offloading and inventory transshipment.
+            </p>
+            <p>
+              <strong>Key Results:</strong> Cost reductions within 0.5% of exact integer linear programming solutions while executing over 8,000x faster. Scales effectively to 500-order instances where exact optimization becomes intractable.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-sidebar">
+          <h2>Contact</h2>
+          <p><strong>Email:</strong> <a href="mailto:sudhanshu.iit.bit@gmail.com">sudhanshu.iit.bit@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sudhanshusri/" target="_blank">linkedin.com/in/sudhanshusri</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/sudsho" target="_blank">github.com/sudsho</a></p>
+          <p><strong>Location:</strong> Louisville, KY, USA</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <h2>Past Research</h2>
+
+      <div class="card" style="margin-bottom: 24px;">
+        <h3>Vocal Psychiatric Simulator for Public Speaking Anxiety</h3>
+        <p style="font-size: 14px; color: #666; margin-bottom: 8px;">UPES Dehradun &bull; 2019&ndash;2021</p>
+        <p>Built a deep learning-based vocal psychiatric simulator for treating public speaking anxiety among university students. The system uses speech recognition and NLP to provide real-time feedback and therapeutic intervention. Published at ICIVC 2021.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 24px;">
+        <h3>Human Settlement Detection Using Satellite Image Fusion</h3>
+        <p style="font-size: 14px; color: #666; margin-bottom: 8px;">ISRO (Indian Institute of Remote Sensing) &bull; 2018&ndash;2019</p>
+        <p>Worked on a government-sponsored project fusing Sentinel-1 (SAR) and Sentinel-2 (optical) satellite imagery using VV polarization for human settlement detection. Applied ML-based digital classification techniques with Bhattacharya distance-based separability analysis. Tools: ArcGIS, SNAP, ERDAS Imagine.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 24px;">
+        <h3>Explainable AI for Black Box Models</h3>
+        <p style="font-size: 14px; color: #666; margin-bottom: 8px;">UPES Dehradun &bull; 2022</p>
+        <p>Research on feature importance methods in Explainable AI for understanding and interpreting black-box machine learning models. Published at ICDSA 2022.</p>
+      </div>
+
+      <div class="card">
+        <h3>Gold Price Prediction Using NLP &amp; Deep Learning</h3>
+        <p style="font-size: 14px; color: #666; margin-bottom: 8px;">UPES Dehradun &bull; 2023</p>
+        <p>Investigated the effect of news headlines on gold price prediction using natural language processing and deep learning techniques. Published at ICAIA 2023.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    &copy; 2026 Sudhanshu Srivastava. All rights reserved.
+  </div>
+
+</body>
+</html>
