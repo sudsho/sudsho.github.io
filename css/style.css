@@ -367,6 +367,28 @@ h3 {
   margin-top: 48px;
 }
 
+/* ===== Hiring Banner ===== */
+.hiring-banner {
+  margin-top: 20px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(25, 135, 84, 0.3);
+}
+
+.hiring-banner a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.hiring-banner a:hover {
+  color: #d1e7dd;
+}
+
 /* ===== Title Line ===== */
 .title-line {
   font-size: 16px;
