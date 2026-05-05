@@ -26,31 +26,66 @@
     <div class="content-grid">
       <div>
 
+        <!-- Professional Summary -->
+        <div class="section">
+          <h2>Professional Summary</h2>
+          <p>
+            AI/ML researcher with <strong>7+ years</strong> of experience in <strong>reinforcement learning, multi-agent systems, causal inference, and stochastic optimization</strong>. Designed <strong>4 novel deep RL frameworks</strong> for manufacturing that match ILP-optimal solutions at <strong>8,000&times; faster inference</strong>, outperform optimization baselines by up to <strong>53 percentage points</strong> under disruption, and cut production scheduling costs by <strong>20&ndash;30%</strong>.
+          </p>
+          <p style="margin-top: 10px;">
+            <strong>9 publications</strong> across IISE Transactions, IJPR, Expert Systems with Applications, and Nature Scientific Reports. Validated all systems on real-world data from a Fortune 500 computer-server manufacturer (NSF + IBM GOALI project).
+          </p>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Technical Skills -->
+        <div class="section">
+          <h2>Technical Skills</h2>
+
+          <div class="skills-block">
+            <h4>Machine Learning &amp; Deep Learning</h4>
+            <p>Reinforcement Learning (Multi-Agent, Hierarchical, Actor-Critic, PPO, MAPPO), Causal Discovery (DAG Learning, Vec2DAG), GANs, XGBoost, Random Forest, Gradient Boosting, Bayesian Optimization, CNNs, LSTMs, Transformers, Transfer Learning, NLP, Computer Vision</p>
+          </div>
+
+          <div class="skills-block">
+            <h4>Optimization &amp; Operations Research</h4>
+            <p>Integer Linear Programming (CPLEX, Gurobi), Lexicographic Optimization, Stochastic Programming, Cost-Sensitive Learning, Warm-Start Hybrid RL+ILP, Predictive Analytics, Simulation Modeling</p>
+          </div>
+
+          <div class="skills-block">
+            <h4>Languages &amp; Frameworks</h4>
+            <p>Python, R, SQL, PyTorch, TensorFlow, Stable-Baselines3, OpenAI Gym, scikit-learn, pandas, NumPy, SciPy, Matplotlib, Seaborn, NLTK, spaCy</p>
+          </div>
+
+          <div class="skills-block">
+            <h4>Tools &amp; Infrastructure</h4>
+            <p>Git, GitHub, Linux, Docker, Jupyter, NVIDIA A6000 GPU, Weights &amp; Biases, LaTeX, ArcGIS, SNAP, ERDAS Imagine, Tableau, Microsoft Excel</p>
+          </div>
+
+          <div class="skills-block">
+            <h4>Domains</h4>
+            <p>Semiconductor Manufacturing, Production Scheduling, Defect Root-Cause Analysis, Supply Chain Optimization, Demand Forecasting, Customer Segmentation, Remote Sensing, Geospatial Analytics</p>
+          </div>
+        </div>
+
+        <hr class="section-divider">
+
         <!-- Experience -->
         <div class="section">
-          <h2>Experience</h2>
+          <h2>Professional Experience</h2>
 
           <div class="timeline-item">
             <div class="timeline-date">Aug 2024 &ndash; Present</div>
             <div class="timeline-content">
-              <h4>Data Scientist &amp; PhD Researcher</h4>
-              <h5>University of Louisville &ndash; IBM &bull; Louisville, KY, USA</h5>
+              <h4>ML Research Scientist &mdash; Graduate Researcher (NSF + IBM GOALI)</h4>
+              <h5>University of Louisville &bull; Louisville, KY</h5>
               <ul>
-                <li>Developing a Deep Reinforcement Learning framework for server-to-cell assignments, reducing fulfillment testing time by over 99% compared to IBM's traditional optimization strategies</li>
-                <li>Developed CF-MARL-SMV2D, a novel causal machine learning model for the NSF-IBM GOALI project on semiconductor defect analysis, outperforming baseline root cause detection by ~10%</li>
-                <li>Working on hierarchical multi-agent RL for distributed manufacturing coordination</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">Feb 2024 &ndash; Jun 2024</div>
-            <div class="timeline-content">
-              <h4>AI Consultant</h4>
-              <h5>Hope and Dreams Trust &bull; Uttar Pradesh, India</h5>
-              <ul>
-                <li>Led the data science team, driving impactful AI projects and innovations</li>
-                <li>Mentored undergraduate CSE students to enhance their technical and professional skills</li>
+                <li>Built <strong>CF-MARL-SMV2D</strong>, a multi-agent causal RL framework for semiconductor defect root-cause analysis on <strong>5,173 real-world records (29 features)</strong>; reduced Structural Hamming Distance by <strong>62.5%</strong> over the best baseline, achieving <strong>0.93 TPR, 0.04 FDR, and 96.1% downstream defect prediction accuracy</strong>, outperforming <strong>8 SOTA methods</strong> (NOTEARS, DAGMA, ALIAS, etc.)</li>
+                <li>Designed <strong>LGRGANN + WBO-CIMP</strong>, a GAN-augmented label reconstruction + Bayesian optimization pipeline for defect disposition under <strong>20%+ missing labels</strong> and <strong>5&ndash;10&times; asymmetric misclassification costs</strong>; improved Scrap-class F1 from 0.76 to <strong>0.92 (+21%)</strong> and reduced expected cost by <strong>25.3%</strong> (validated across n=50 runs: 10 seeds &times; 5 temporal folds)</li>
+                <li>Engineered <strong>LHAC</strong>, a lexicographic dual-agent deep RL scheduler for server-to-cell assignment across <strong>4 test banks &times; 14 cells</strong>; achieved <strong>98.5% completion / 1.4% tardiness</strong> deterministically, and outperformed GA+CPLEX by up to <strong>53 percentage points</strong> under stochastic arrivals, processing noise, and 20% cell disruptions</li>
+                <li>Developed <strong>HMARL</strong>, a hierarchical multi-agent RL system for distributed production coordination; achieved <strong>8.08% cost reduction</strong> (within 0.44% of ILP) with <strong>&lt;0.01s inference vs. 83.4s (8,340&times; speedup)</strong>; scaled to <strong>500 orders at 87.5% on-time delivery in &lt;8s</strong> where ILP becomes computationally intractable</li>
+                <li>Built a <strong>Hybrid RL+CPLEX warm-start pipeline</strong> feeding trained LHAC policies as feasible initial solutions to a CPLEX MIP solver, recovering additional server placements on capacity-stressed instances where RL-only completion dropped to 93%</li>
               </ul>
             </div>
           </div>
@@ -59,10 +94,22 @@
             <div class="timeline-date">Aug 2023 &ndash; Dec 2023</div>
             <div class="timeline-content">
               <h4>Senior Research Associate</h4>
-              <h5>IIM Ahmedabad &bull; Gujarat, India</h5>
+              <h5>Indian Institute of Management (IIM) Ahmedabad &bull; Gujarat, India</h5>
               <ul>
-                <li>Conducted research on consumer technology for Nykaa under Prof. Indranil Bose ("Nykaa Chair" project)</li>
-                <li>Applied Machine Learning and Deep Learning to solve business optimization problems</li>
+                <li>Developed ML/DL pricing optimization and demand forecasting models on live transactional data for <strong>Nykaa ($7B+ market cap)</strong>, India's largest beauty e-commerce platform, under Prof. Indranil Bose</li>
+                <li>Engineered customer segmentation pipelines using clustering and classification on <strong>500K+ transaction records</strong>, informing targeted marketing strategy that improved campaign targeting precision</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">Feb 2024 &ndash; Jun 2024</div>
+            <div class="timeline-content">
+              <h4>AI Consultant</h4>
+              <h5>Hope and Dreams Trust (Education NGO) &bull; Uttar Pradesh, India</h5>
+              <ul>
+                <li>Built NLP-driven predictive analytics pipelines for scholarship targeting and student outreach across <strong>1,000+ beneficiaries</strong></li>
+                <li>Developed automated reporting tools that <strong>reduced manual data processing time by 40%</strong></li>
               </ul>
             </div>
           </div>
@@ -70,12 +117,12 @@
           <div class="timeline-item">
             <div class="timeline-date">Aug 2019 &ndash; Jul 2023</div>
             <div class="timeline-content">
-              <h4>Assistant Professor</h4>
-              <h5>UPES, School of Computer Science &bull; Dehradun, India</h5>
+              <h4>Assistant Professor, School of Computer Science</h4>
+              <h5>UPES Dehradun &bull; Uttarakhand, India</h5>
               <ul>
-                <li>Taught Machine Learning, Deep Learning, NLP, Theory of Computation, and Compiler Design</li>
-                <li>Mentored 8 undergraduate projects, published 2 conference papers and 3 copyrights</li>
-                <li>Built a Vocal Psychiatric Simulator using deep learning for student depression intervention</li>
+                <li>Designed and delivered <strong>ML, Deep Learning, NLP, and Compiler Design</strong> curricula across 8 semesters to <strong>400+ students</strong>; supervised 8 capstone projects, 2 resulting in peer-reviewed conference publications</li>
+                <li>Built a deep-learning <strong>Vocal Psychiatric Simulator</strong> for public speaking anxiety treatment, adopted by the university counseling center (published at ICIVC 2021)</li>
+                <li>Filed <strong>3 Government of India software copyrights</strong> for original ML tools</li>
               </ul>
             </div>
           </div>
@@ -86,9 +133,8 @@
               <h4>Project Scientist</h4>
               <h5>Indian Institute of Remote Sensing (IIRS), ISRO &bull; Uttarakhand, India</h5>
               <ul>
-                <li>Worked on "Human Settlement Detection Using Image Fusion and Digital Classification Techniques"</li>
-                <li>Fused Sentinel-1 and Sentinel-2 satellite images using VV polarization and ML-based classification</li>
-                <li>Tools: ArcGIS, SNAP, ERDAS Imagine</li>
+                <li>Developed a <strong>SAR-optical data fusion pipeline</strong> (Sentinel-1 + Sentinel-2) for human settlement detection</li>
+                <li>Improved class separability from <strong>TD=1.025 to TD=1.93 (+88%)</strong>, achieving <strong>92% classification accuracy (&kappa;=0.90)</strong> on a government-funded geospatial project</li>
               </ul>
             </div>
           </div>
@@ -99,8 +145,8 @@
               <h4>System Analyst</h4>
               <h5>Maven General Contracting L.L.C. &bull; Abu Dhabi, UAE</h5>
               <ul>
-                <li>Managed transaction servers, database systems, and MIS</li>
-                <li>Designed a deep learning-based visual system for construction site safety hazard detection</li>
+                <li>Built data-driven procurement and cost forecasting models for construction operations across <strong>10+ active sites</strong>; reduced cost variance by <strong>18%</strong></li>
+                <li>Developed automated analytics dashboards improving project tracking efficiency</li>
               </ul>
             </div>
           </div>
@@ -116,7 +162,7 @@
             <span class="edu-date">Aug 2024 &ndash; Dec 2026 (Expected)</span>
             <h4>University of Louisville, Kentucky, USA</h4>
             <p>PhD in Industrial &amp; Systems Engineering</p>
-            <p style="font-size: 13px; color: #888;">Thesis: Reinforcement Learning for Distributed Manufacturing</p>
+            <p style="font-size: 13px; color: #888;">Thesis: Reinforcement Learning for Distributed Manufacturing &bull; NSF + IBM GOALI Funded</p>
           </div>
 
           <div class="edu-item">
@@ -126,15 +172,10 @@
           </div>
 
           <div class="edu-item">
-            <span class="edu-date">Oct 2019 &ndash; Nov 2020</span>
-            <h4>The University of Texas at Austin (Online)</h4>
-            <p>Post Graduate Program in AI and Machine Learning</p>
-          </div>
-
-          <div class="edu-item">
-            <span class="edu-date">Jul 2017 &ndash; Sep 2019</span>
+            <span class="edu-date">Jul 2017 &ndash; May 2019</span>
             <h4>Indian Institute of Technology (IIT) Dhanbad, India</h4>
-            <p>MTech in Computer Science and Engineering</p>
+            <p>MTech in Computer Science &amp; Engineering</p>
+            <p style="font-size: 13px; color: #888;">GATE 96th Percentile &bull; Government Fellowship Recipient</p>
           </div>
 
           <div class="edu-item">
@@ -148,15 +189,16 @@
 
         <!-- Awards -->
         <div class="section">
-          <h2>Fellowships &amp; Awards</h2>
+          <h2>Awards &amp; Leadership</h2>
           <ul class="awards-list" style="padding-left: 20px;">
-            <li><strong>American Society for Quality Scholarship Award (2025)</strong> &mdash; Louisville Section 912, J.B. Speed School of Engineering, for demonstrated scholarly achievement and potential to contribute to the field of Quality.</li>
-            <li><strong>NSF 2025 IISE Annual Conference Student Travel Award</strong> &mdash; Sponsored by NSF Manufacturing Systems Integration (MSI) and Advanced Manufacturing (AM) programs (Award ID CMMI-2511912).</li>
-            <li><strong>GATE Fellowship</strong> &mdash; Received Rs. 12,400/month for two years to complete MTech thesis at IIT Dhanbad.</li>
-            <li><strong>GATE 2017</strong> &mdash; 96+ percentile in the national examination, securing admission to IIT Dhanbad.</li>
-            <li><strong>AIEEE 2012</strong> &mdash; All India Rank 6,048 out of 1.2 million students; admitted to BIT Mesra, Ranchi.</li>
-            <li><strong>IIT-JEE 2012</strong> &mdash; All India Rank 18,538 out of 0.56 million students.</li>
-            <li><strong>NTSE 2008-09 Scholar</strong> &mdash; National Talent Search Examination scholarship by Government of India.</li>
+            <li><strong>Outstanding Service Award</strong>, ISE Dept., University of Louisville (2026) &mdash; <em>top 2 of all graduate students</em></li>
+            <li><strong>ASQ Louisville Section 912 Scholarship Award</strong> (2025) &mdash; for research potential in Quality Engineering</li>
+            <li><strong>NSF Student Travel Award</strong>, IISE Annual Conference (2025) &mdash; NSF Award CMMI-2511912</li>
+            <li><strong>Runner-up</strong>, UofL Graduate School Three Minute Thesis Competition (2025)</li>
+            <li><strong>President, Indian Graduate Student Association (IGSA), UofL</strong> (2025&ndash;2026) &mdash; led 9-member board, organized 7+ events, won Outstanding New Student Organization Award at 27th Annual UofL Student Awards</li>
+            <li><strong>GATE Fellowship, Government of India</strong> (2017&ndash;2019) &mdash; 96th percentile; fully-funded MTech at IIT Dhanbad</li>
+            <li><strong>3 Government of India Software Copyrights</strong> &mdash; for original ML tools developed at UPES</li>
+            <li><strong>NTSE 2008-09 Scholar</strong> &mdash; National Talent Search Examination scholarship by Government of India</li>
           </ul>
         </div>
 
@@ -164,19 +206,20 @@
 
       <!-- Sidebar -->
       <div>
-        <div class="contact-sidebar" style="margin-top: 32px;">
+        <div class="contact-sidebar" style="margin-top: 32px; position: sticky; top: 80px;">
           <h2>Contact</h2>
-          <p><strong>Email:</strong><br><a href="mailto:sudhanshu.iit.bit@gmail.com">sudhanshu.iit.bit@gmail.com</a></p>
+          <p><strong>Email:</strong><br><a href="mailto:sudhanshu.srivastava@louisville.edu">sudhanshu.srivastava@louisville.edu</a></p>
           <p><strong>Phone:</strong><br>+1 502-608-9718</p>
           <p><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/sudhanshusri/" target="_blank">linkedin.com/in/sudhanshusri</a></p>
           <p><strong>GitHub:</strong><br><a href="https://github.com/sudsho" target="_blank">github.com/sudsho</a></p>
           <p><strong>Location:</strong><br>Louisville, KY, USA</p>
+          <p style="margin-top: 16px;"><a href="Sudhanshu_Srivastava_ML_Engineer_Resume.pdf" target="_blank" class="resume-btn">&#128196; Download Full Resume</a></p>
         </div>
 
         <div class="contact-sidebar" style="margin-top: 20px;">
           <h2>References</h2>
           <p><strong>Dr. Faisal Aqlan</strong><br>Associate Professor<br>ISE, University of Louisville<br><a href="mailto:faisal.aqlan@louisville.edu">faisal.aqlan@louisville.edu</a></p>
-          <p style="margin-top: 12px;"><strong>Dr. Pratik Parikh</strong><br>Professor &amp; Head<br>ISE, University of Louisville<br><a href="mailto:pratik.parikh@louisville.edu">pratik.parikh@louisville.edu</a></p>
+          <p style="margin-top: 12px;"><strong>Dr. Pratik J. Parikh</strong><br>Professor &amp; Chair<br>ISE, University of Louisville<br><a href="mailto:pratik.parikh@louisville.edu">pratik.parikh@louisville.edu</a></p>
         </div>
       </div>
     </div>
@@ -184,7 +227,7 @@
   </div>
 
   <div class="footer">
-    &copy; 2026 Sudhanshu Srivastava. All rights reserved.
+    &copy; 2026 Sudhanshu Srivastava &middot; <a href="mailto:sudhanshu.srivastava@louisville.edu">sudhanshu.srivastava@louisville.edu</a> &middot; <a href="https://github.com/sudsho">GitHub</a> &middot; <a href="https://www.linkedin.com/in/sudhanshusri/">LinkedIn</a>
   </div>
 
 </body>
